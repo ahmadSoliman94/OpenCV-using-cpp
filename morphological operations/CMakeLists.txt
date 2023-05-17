@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.15)
+project( opreations )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( opreations main.cpp )
+target_link_libraries( opreations ${OpenCV_LIBS} )
